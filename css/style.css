@@ -89,6 +89,7 @@ nav .content .links li{
 .header-action {
     display: flex;
     gap: 17px;
+    margin-left: -28px;
   }
   /*  */
   .header-action-btn {
@@ -482,6 +483,9 @@ button {
 .product-list > * {
     display: none;
 }
+/* .product-list.show {
+    display: block;
+  } */
 .product-card {
     text-align: center;
 }
@@ -649,6 +653,23 @@ a {
 }
 
 .product-card .card-price .del { color: gray; }
+.product-list > * {
+    display: block;
+    animation: fadeUp 1s ease forwards;
+  }
+  
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 
 .product-list > * { display: none; }
 
@@ -656,8 +677,8 @@ a {
 .product-list[data-filter="desks"] > .desks,
 .product-list[data-filter="chairs"] > .chairs,
 .product-list[data-filter="tables"] > .tables,
-.product-list[data-filter="sofass"] > .sofas,
-.product-list[data-filter="lamps"] > .lamps {
+.product-list[data-filter="sofass"] > .sofas
+ {
   display: block;
   animation: fadeUp 1s ease forwards;
 }
@@ -675,6 +696,7 @@ a {
 } 
 
 
+.product-list-wrapper {     display: flex;     flex-wrap: wrap;   }  
 
 /* Product Section Start */
 .product {
@@ -698,16 +720,15 @@ a {
     grid-template-columns: repeat(3, minmax(230px, 1fr));
     align-items: center;
     gap: 0.90rem;
-    margin-top: 9px; /* This margin might be causing issues */
+    /* margin-top: 9px; This margin might be causing issues */
     margin-left: -74px;
 }
-     /* .card-content {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        align-items: center;
-        gap: 0.90rem;
-    } */
     
+.desk4 .active{
+    display: block;
+ margin-top: -799px;
+}
+      
         .card-content .row{
      background: #f3f3f3; 
      position: relative;
