@@ -243,7 +243,7 @@ nav .content .links li{
 /* Home Section Start */
 .home{
     width: 100%;
-    height: 100vh;
+    height: 82vh;
     background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../imgs/hero1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -293,6 +293,12 @@ nav .content .links li{
         left:10px;
     }
 }
+@media screen and (max-width: 340px){
+.home .main-text {
+    position: relative;
+    top: -125px;
+}
+}
 /* Home Section End */
 
 
@@ -331,7 +337,7 @@ nav .content .links li{
     margin-left: 5px;
     color: rgb(65, 63, 63);
     position: relative;
-    top: 4px;
+    top: 1px;
     /* text-align: center; */
 }
 @media (max-width:920px){
@@ -432,6 +438,28 @@ nav .content .links li{
     }
 }
 
+/* @media (min-width: 866px){
+    .filter-btn-list {
+    margin-left: 20px;
+    }
+}
+@media (max-width: 866px){
+.filter-btn-list {
+    position: relative;
+    left: 104px;
+}
+} */
+/* @media (max-width: 400px){
+    .filter-btn-list {
+       font-size: 15px;
+    }
+    } */
+    @media (max-width: 766px){
+        .h2-section-title{
+       
+            margin-left: -12px;
+        }
+        }
 
 .section {
     padding-block: 50px;
@@ -444,7 +472,7 @@ nav .content .links li{
 }
 .h2-section-title{
     font-size: 34px;
-    margin-left: -132px;
+    margin-left: -43px;
     margin-top: -39px;
     color: var(--main-color);
     font-weight: 700;
@@ -545,9 +573,9 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: -129px;
+  margin-left: -166px;
   position: relative;
-  left: 176px;
+  left: 113px;
 }
 
 .filter-btn-item {
@@ -696,15 +724,18 @@ a {
 } 
 
 
-.product-list-wrapper {     display: flex;     flex-wrap: wrap;   }  
+.product-list-wrapper {display: flex;flex-wrap: wrap;left: -16px;position: relative;}  
 
 /* Product Section Start */
 .product {
     padding: 10px 8% 120px;
+    margin-top: -65px;
   }
   
   .main-txt {
     text-align: center;
+    position: relative;
+    top: 82px;
   }
   
   .main-txt h3 {
@@ -713,28 +744,45 @@ a {
     font-weight: 600;
     color: var(--main-color);
     text-shadow: 0px 1px 1px black;
+    margin-top: 72px;
   }
   
-  .card-content {
+  .banner .card-content {
     display: grid;
     grid-template-columns: repeat(3, minmax(230px, 1fr));
     align-items: center;
     gap: 0.90rem;
     /* margin-top: 9px; This margin might be causing issues */
-    margin-left: -74px;
+    margin-left: 196px;
+    top: 117px;
+    position: relative;
+    width: 200px;
 }
-    
+
+  
+  .section.product .product .card-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(230px, 1fr));
+    align-items: center;
+    gap: 0.90rem;
+    /* margin-top: 9px; This margin might be causing issues */
+    margin-left: -81px;
+    top: 117px;
+    position: relative;
+    width: 200px;
+}
 .desk4 .active{
     display: block;
  margin-top: -799px;
 }
       
         .card-content .row{
-     background: #f3f3f3; 
+     background: #f3f3f3;
      position: relative;
-      overflow: hidden;
-       border-radius: 10px;
-        cursor: pointer; } 
+     overflow: hidden;
+     border-radius: 10px;
+     cursor: pointer;
+     } 
 .row img{
     width: 100%;
     display: block;
@@ -779,16 +827,46 @@ a {
 @media (max-width:920px){ .card-content{ grid-template-columns: repeat(3, minmax(230px, 1fr)); margin-left: 20px; } }
 
 @media (max-width:920px){
-    .card-content{
+    .section.product .product .card-content{
         grid-template-columns: repeat(2, minmax(230px, 1fr));
+        margin-left: 38px;
+    }
+}
+@media (max-width:1067px){
+    .section.product .product .card-content{
+ 
+margin-left: -30px;
+ 
+}
+}
+@media (max-width:1067px){
+    .banner .card-content{
+      margin-left: 76px;
+    }
+}
+@media (max-width:760px){
+    .banner .card-content{
+      margin-left: -8px;
     }
 }
 
-@media (max-width:445px){ .card-content{ grid-template-columns: repeat(1, minmax(230px, 1fr)); } }
+
+@media (max-width:550px){
+    .banner .card-content{
+        grid-template-columns: repeat(2, minmax(230px, 1fr));
+    }
+}
+@media (max-width:443px){
+    .banner .card-content{
+        grid-template-columns: repeat(1, minmax(230px, 1fr));
+        margin-left: 42px;
+    }
+}
+@media (max-width:445px){ .section.product .product .card-content{ grid-template-columns: repeat(1, minmax(230px, 1fr)); } }
 @media (max-width:760px){ .filter-btn-list{ position: relative; left: 104px; } } 
 @media (max-width:500px){
     .h2-section-title{
-        left: 237px;
+        left: 141px;
         position: relative;
     }
     }
@@ -802,27 +880,164 @@ a {
     .filter-btn-list{
         position: relative;
         left: 104px;
+        font-size: 0px;
     }
     }
-    @media (max-width:300px){
+    @media (max-width: 330px){
         .filter-btn-list{
-            font-size: 17px;
+            font-size: 0px;
+            margin-left: -102px;
         }
         }
+        @media (max-width: 766px){
+            .h2-section-title{
+           
+margin-left: 189px;
+           
+}
+            }
+            @media (max-width: 500px){
+                .h2-section-title{
+               
+                    margin-left: -12px;
+                }
+                }
+                @media (max-width: 388px){
+                    .h2-section-title{
+                   
+margin-left: -65px;
+                   
+}
+                }
+                @media (max-width: 292px){
+                    .h2-section-title{
+                   
+margin-left: -140px;
+                   
+}
+                    }
+                    @media (max-width: 880px){
+                        .card-content{
+                       
+left: -3px;
+                       
+position: relative;
+}
+                        }
+
+                        @media (max-width: 500px){
+                            .card-content{
+                           
+left: -71px;
+                           
+position: relative;
+    }
+                            }
+                            @media (max-width: 443px){
+                                .card-content{
+                               
+left: 4px;
+                               
+position: relative;
+        }
+                                }
+                                @media (max-width: 281px){
+                                    .card-content{
+                                   
+left: -41px;
+                                   
+position: relative;
+            }
+                                    }
+
 /* Product Section End */
+/* 
+modifie avticve products */
+
+.chairs.active .chair2{margin-top: -391px;}
+.chair3 .chairs.active {position: relative;top: -406px;}
+.chair4 .chairs.active{
+    position: relative;
+    top: -385px;
+    left: -245px;
+}
+.chair6 .chairs.active{
+    position: relative;
+    top: -385px;
+    left: -245px;
+}
+.chair6 img{
+    width: 195px;
+    height: 236px;
+}
+.desk3 .desks.active{
+    position: relative;
+    top: -391px;
+}
+.desk5 .desks.active{
+    position: relative;
+    top: -391px;
+}
+.table3 .tables.active{
+    position: relative;
+    top: -393px;
+}
+.table3 img{
+    height: 250px;
+}
+.table5 .tables.active{
+    position: relative;
+    top: -817px;
+    left: 250px;
+}
+.sofa2 .sofas.active{
+    position: relative;
+    top: 21px;
+    left: -480px;
+}
+.sofa1 .sofas.active{
+    position: relative;
+    top: -385px;
+    left: 260px;
+}
+.sofa6 .sofas.active{
+    position: relative;
+    top: -788px;
+    left: 33px;
+}
+.sofa4 .sofas.active{
+    position: relative;
+    top: -788px;
+    left: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Banner Start */
 .banner{
     width: 100%;
     height: 60vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../imgs/hero3.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../imgs/home5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -39px;
 }
 .banner-content{
     text-align: center;
     padding: 150px 10% 10px;
+    top: -64px;
+    position: relative;
 }
 .banner-content h5{
     color: white;
@@ -865,21 +1080,36 @@ a {
     background: var(--main-color);
     border: none;
 }
+@media (max-width: 512px){
+    .banner-content{
+        font-size: 0px;
+        /* margin-top: -63px; */
+        top: -106px;
+    }
+    }
+    @media (max-width: 333px){
+        .banner-content{
+            /* font-size: 0px; */
+            /* margin-top: -63px; */
+            top: -133px;
+        }
+        }
 /* Banner End */
 
 /* Review Section Start */
 .review{
-    padding: 120px 8% 120px;
+    padding: 24px 8% 120px;
     background: white;
-    margin-top: -121px;
+    margin-top: 1030px;
+    position: relative;
 }
 .review-content{
     display: grid;
     grid-template-columns: repeat(3, minmax(223px, auto));
     align-items: center;
     gap: 2.5rem;
-    margin-top: 5rem;
-    margin-left: -116px;
+    margin-top: 10rem;
+    margin-left: -35px;
 }
 .box{
     background: #f3f3f3;
@@ -894,7 +1124,7 @@ a {
     font-size: 61px;
     color: var(--main-color);
     margin-top: 30px;
-    left: -10px;
+    left: -7px;
     position: relative;
 }
 .review .star i{
@@ -909,7 +1139,7 @@ a {
 }
 @media (max-width:996px) {
     .review-content .img{
-        left: 18px;
+        left: -47px;
     }
     
 }
@@ -934,8 +1164,44 @@ a {
 @media (max-width:920px){
     .review-content{
         grid-template-columns: 1fr;
+        width: 200px;
+        margin-left: 200px;
+    }
+    .review-content .img{
+      left: 2px;
+}
+}
+@media (max-width:600px) {
+    .review-content {
+        left: -131px;
+        position: relative;
+    }
+    .main-txt h3{
+        position: relative;
+        left: -8px;
     }
 }
+@media (max-width:468px) {
+    .review-content {
+        left: -175px;
+        position: relative;
+    }
+    .main-txt h3{
+        position: relative;
+        left: 3px;
+    }
+}
+@media (max-width:365px) {
+    .review-content {
+        left: -216px;
+        position: relative;
+    }
+    .main-txt h3{
+        position: relative;
+        left: 3px;
+    }
+}
+
 /* Review Section End */
 
 

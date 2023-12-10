@@ -71,60 +71,136 @@
 
 
 
+////////good one
 
+// document.addEventListener('DOMContentLoaded', function () {
+//   const filterButtons = document.querySelectorAll('.filter-btn');
+//   const productItems = document.querySelectorAll('.product-list li');
+//   const desks = document.querySelectorAll('.desks');
+
+//   filterButtons.forEach(function (button) {
+//     button.addEventListener('click', function () {
+//       const filter = this.getAttribute('data-filter-btn');
+
+//       productItems.forEach(function (item) {
+//         if (filter === 'all' || item.classList.contains(filter)) {
+//           item.style.display = 'block';
+//         } else {
+//           item.style.display = 'none';
+//         }
+//       });
+
+//       // Show items that match the filter and hide others
+//       productItems.forEach(function (item) {
+//         if (filter === 'all' || item.classList.contains(filter)) {
+//           item.style.display = 'block';
+//         } else {
+//           item.style.display = 'none';
+//         }
+//       });
+
+//       // Add active class to the clicked button and remove it from others
+      
+// this.classList.add('active');
+// const iconName = this.getAttribute('data-icon');
+// const iconElement = document.querySelector('.' + iconName);
+// if (iconElement) {
+//   iconElement.classList.add('active');
+// } 
+//       // desks.forEach(function (desks) {
+//       //   desks.classList.remove('active');
+//       // });
+      
+//       // this.classList.add('active');
+ 
+//     });
+//   });
+// });
+
+
+
+
+
+////////////////9dec
 
 document.addEventListener('DOMContentLoaded', function () {
   const filterButtons = document.querySelectorAll('.filter-btn');
   const productItems = document.querySelectorAll('.product-list li');
-  const desks = document.querySelectorAll('.desks');
 
   filterButtons.forEach(function (button) {
     button.addEventListener('click', function () {
       const filter = this.getAttribute('data-filter-btn');
 
+      // Remove active class from all product items
       productItems.forEach(function (item) {
-        if (filter === 'all' || item.classList.contains(filter)) {
+        item.classList.remove('active');
+      });
+
+      // Show items that match the filter and hide others, also add active class to matching items
+      productItems.forEach(function (item) {
+        if (filter === 'all') {
           item.style.display = 'block';
+          item.classList.add('active');
+        } else if (item.classList.contains(filter)) {
+          item.style.display = 'block';
+          item.classList.add('active');
         } else {
           item.style.display = 'none';
         }
       });
 
-      // Show items that match the filter and hide others
-      productItems.forEach(function (item) {
-        if (filter === 'all' || item.classList.contains(filter)) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
-        }
+      // Remove active class from all buttons
+      filterButtons.forEach(function (btn) {
+        btn.classList.remove('active');
       });
 
-      // Add active class to the clicked button and remove it from others
-      desks.forEach(function (desks) {
-        desks.classList.remove('active');
-      });
-      
+      // Add active class to the clicked button
       this.classList.add('active');
- 
     });
   });
 });
-///codim modifie class name
-filterButtons.forEach(function (btn) {
-  btn.classList.remove('active');
-  const iconName = btn.getAttribute('data-icon'); // Assuming the data-icon attribute stores the class name of the related <i> element
-  const iconElement = document.querySelector('.' + iconName);
-  if (iconElement) {
-    iconElement.classList.remove('active');
-  }
-});
 
-this.classList.add('active');
-const iconName = this.getAttribute('data-icon');
-const iconElement = document.querySelector('.' + iconName);
-if (iconElement) {
-  iconElement.classList.add('active');
-} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ///codim modifie class name
+// filterButtons.forEach(function (btn) {
+//   btn.classList.remove('active');
+//   const iconName = btn.getAttribute('data-icon'); // Assuming the data-icon attribute stores the class name of the related <i> element
+//   const iconElement = document.querySelector('.' + iconName);
+//   if (iconElement) {
+//     iconElement.classList.remove('active');
+//   }
+// });
+
+// this.classList.add('active');
+// const iconName = this.getAttribute('data-icon');
+// const iconElement = document.querySelector('.' + iconName);
+// if (iconElement) {
+//   iconElement.classList.add('active');
+// } 
 ////////////////////////////////////////////////////////
 
 
