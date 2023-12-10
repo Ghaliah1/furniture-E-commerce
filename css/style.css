@@ -1,3 +1,4 @@
+/* start */
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +20,9 @@ html::-webkit-scrollbar-thumb{
 }
 html::-webkit-scrollbar{
     width: 10px;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     background: white;
@@ -85,13 +89,11 @@ nav .content .links li{
 .header .menu-icon{
     display: none;
 }
-
 .header-action {
     display: flex;
     gap: 17px;
     margin-left: -28px;
   }
-  /*  */
   .header-action-btn {
     position: relative;
     font-size: 19px;
@@ -103,9 +105,9 @@ nav .content .links li{
     top: 24px;
     left: 102px;
   }
-  
-  .header-action-btn:is(:hover, :focus) { color: var(--main-color); }
-  
+  .header-action-btn:is(:hover, :focus) {
+    color: var(--main-color);
+}
   .header-action-btn .btn-badge {
     color: rgb(65, 63, 63);
     font-size: 16px;
@@ -167,7 +169,7 @@ nav .content .links li{
     display: none;
 }
 
-/* Responsive */
+/* Header Responsive */
 @media screen and (max-width:1250px){
     .header nav{
         max-width: 100%;
@@ -186,7 +188,6 @@ nav .content .links li{
         padding: 0px 100px 0px 15px;
     }
 }
-
 @media screen and (max-width:1250px){
     .header-action-btn{left: 26px;}
 }
@@ -236,10 +237,6 @@ nav .content .links li{
 }
 /* Header End */
 
-
-
-
-
 /* Home Section Start */
 .home{
     width: 100%;
@@ -280,6 +277,7 @@ nav .content .links li{
     background-color: var(--main-color);
     color: white;
 }
+/* Home Responsive */
 @media screen and (max-width: 295px){
     .home .main-text {
     position: relative;
@@ -296,14 +294,77 @@ nav .content .links li{
 @media screen and (max-width: 340px){
 .home .main-text {
     position: relative;
-    top: -125px;
+    top: -43px;
 }
 }
+@media screen and (max-width: 578px){
+    .home .main-text {
+        position: relative;
+        top: -10px;
+    }
+    }
+@media screen and (max-width: 553px){
+    .main-text h1{
+        position: relative;
+        top: -70px;
+        font-size: 47px;
+    }
+    }
+    @media screen and (max-width: 373px){
+        .main-text h1{
+            position: relative;
+            top: -59px;
+            font-size: 45px;
+        }
+        }
+            @media screen and (max-width: 300px){
+                .main-text h1{
+                    position: relative;
+                    top: -162px;
+                    font-size: 45px;
+                }
+                }
+        @media screen and (max-width: 351px){
+            .main-text h1{
+                position: relative;
+                top: -57px;
+                font-size: 40px;
+            }
+            }
+            @media screen and (max-width: 373px){
+                .home .main-text p {
+                    position: relative;
+                    top: -130px;
+                    font-size: 14px;
+                }
+                }
+    @media screen and (max-width: 551px){
+        .home .main-text p{
+            position: relative;
+            top: -57px;
+        }
+        }
+        @media screen and (max-width: 551px){
+            #btn{
+                position: relative;
+                top: -61px;
+            }
+            }
+            @media (max-width: 553px) {
+                .content {
+                  position: relative;
+                  z-index: 1;
+                }
+
+                .main-text {
+                  position: relative;
+                  z-index: 0;
+                }
+              }
+
 /* Home Section End */
 
-
-
-/* Top Section Card Start */
+/* Offers section start*/
 .offers{
     padding: 10px 8% 20px;
     background: #fcfafa;
@@ -338,16 +399,13 @@ nav .content .links li{
     color: rgb(65, 63, 63);
     position: relative;
     top: 1px;
-    /* text-align: center; */
 }
 @media (max-width:920px){
     .offer-content{
         grid-template-columns: 1fr;
     }
 }
-/* Top Section Card End */
-
-
+/* Offers section start*/
 
 /* About Section Start */
 .about{
@@ -390,6 +448,7 @@ nav .content .links li{
     background: var(--main-color);
     color: white;
 }
+/* About Responsive */
 @media (max-width:920px){
     .about{
         grid-template-columns: 1fr;
@@ -407,11 +466,7 @@ nav .content .links li{
 /* About Section End */
 
 
-
-
-/*-----------------------------------*\
-  #PRODUCT
-\*-----------------------------------*/
+/* Product Section Start */
 @media (min-width: 768px){
     .container {
         max-width: 768px;
@@ -437,26 +492,9 @@ nav .content .links li{
     column-gap: 25px;
     }
 }
-
-/* @media (min-width: 866px){
-    .filter-btn-list {
-    margin-left: 20px;
-    }
-}
-@media (max-width: 866px){
-.filter-btn-list {
-    position: relative;
-    left: 104px;
-}
-} */
-/* @media (max-width: 400px){
-    .filter-btn-list {
-       font-size: 15px;
-    }
-    } */
     @media (max-width: 766px){
         .h2-section-title{
-       
+
             margin-left: -12px;
         }
         }
@@ -478,11 +516,6 @@ nav .content .links li{
     font-weight: 700;
     line-height: 1.4;
 }
-/* .h2, .h3 {
-    color: black;
-    font-weight: 500;
-    line-height: 1.4;
-} */
 .filter-btn-item {
     position: relative;
     display: flex;
@@ -506,14 +539,10 @@ button {
     display: grid;
     gap: 109px;
     grid-template-columns: repeat(auto-fit, minmax(109px, auto));
-    /* justify-content: space-between; */
 }
 .product-list > * {
     display: none;
 }
-/* .product-list.show {
-    display: block;
-  } */
 .product-card {
     text-align: center;
 }
@@ -526,7 +555,6 @@ button {
     background-color: gray;
     overflow: hidden;
 }
-
 a {
     color: inherit;
     text-decoration: none;
@@ -536,38 +564,6 @@ a {
     height: 100%;
     object-fit: cover;
 }
-.product-card .card-action-list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 100%);
-    display: flex;
-    gap: 15px;
-    opacity: 0;
-    transition: 0.5s ease;
-}
-.product-card .card-action-btn {
-    background-color: white;
-    font-size: 22px;
-    padding: 12px;
-    border-radius: 50%;
-    transition: 0.25s ease;
-}
-.hydrated {
-    visibility: inherit;
-}
-
-.product-card .badge-list {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-}
-
-
-
-
-.product .section-title { text-align: center; }
-
 .filter-btn-list {
   margin-block: 20px 50px;
   display: flex;
@@ -577,130 +573,37 @@ a {
   position: relative;
   left: 113px;
 }
-
 .filter-btn-item {
   position: relative;
   display: flex;
 }
-
 .filter-btn-item:not(:last-child)::after {
   content: "|";
   margin-inline: 15px;
 }
-
-
-.filter-btn.active { 
+.filter-btn.active {
     color: var(--main-color);
  }
-
 .product-card { text-align: center; }
-
-.product-card .card-banner::before {
-  inset: 0;
-  background-color: black;
-  opacity: 0;
-  transition: 0.25s ease;
-}
 
 .product-card .card-banner:is(:hover, :focus-within)::before { opacity: 1; }
 
-.card-action-list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 100%);
-  display: flex;
-  gap: 15px;
-  opacity: 0;
-  transition: 0.5s ease;
-}
-
-.product-card .card-banner:is(:hover, :focus-within) .card-action-list {
-  transform: translate(-50%, -50%);
-  opacity: 1;
-}
-
-/* .product-card .card-action-btn {
-  background-color: var(--white);
-  font-size: 22px;
-  padding: 12px;
-  border-radius: 50%;
-  transition: var(--transition-1);
-} */
-
-.card-action-btn:is(:hover, :focus) { color: purple; }
-
-.product-card .badge-list {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-}
-
-.product-card .badge {
-  color: white;
-  font-size: 4.1rem;
-  font-weight: 500;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  line-height: 45px;
-  margin-block-end: 10px;
-}
-
-.product-card .badge.orange { background-color:orange; }
-
-.product-card .badge.cyan { background-color: blue; }
-
-.product-card .card-badge {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: black;
-  color: white;
-  font-weight: 500;
-  padding-inline: 15px;
-}
-
-.product-card .h3 { font-size: unset; }
-
-.product-card .card-title {
-  color: black;
-  font-weight: 500;
-  margin-block: 18px 5px;
-  transition: 0.25s ease
-}
-
-.product-card .card-title:is(:hover, :focus) { color: purple; }
-
-.product-card .card-price {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  color: gray;
-  font-size: 1.8rem;
-}
-
-.product-card .card-price .del { color: gray; }
 .product-list > * {
     display: block;
     animation: fadeUp 1s ease forwards;
   }
-  
   @keyframes fadeUp {
     0% {
       opacity: 0;
       transform: translateY(10px);
     }
-  
+
     100% {
       opacity: 1;
       transform: translateY(0);
     }
   }
-  
-
 .product-list > * { display: none; }
-
 .product-list[data-filter="all"] > *,
 .product-list[data-filter="desks"] > .desks,
 .product-list[data-filter="chairs"] > .chairs,
@@ -721,23 +624,18 @@ a {
     opacity: 1;
     transform: translateY(0);
   }
-} 
-
-
-.product-list-wrapper {display: flex;flex-wrap: wrap;left: -16px;position: relative;}  
-
-/* Product Section Start */
+}
+.product-list-wrapper {display: flex;flex-wrap: wrap;left: -16px;position: relative;}
 .product {
     padding: 10px 8% 120px;
     margin-top: -65px;
   }
-  
   .main-txt {
     text-align: center;
     position: relative;
     top: 82px;
   }
-  
+
   .main-txt h3 {
     font-size: 36px;
     text-transform: uppercase;
@@ -746,28 +644,24 @@ a {
     text-shadow: 0px 1px 1px black;
     margin-top: 72px;
   }
-  
+
   .banner .card-content {
     display: grid;
     grid-template-columns: repeat(3, minmax(230px, 1fr));
     align-items: center;
     gap: 0.90rem;
-    /* margin-top: 9px; This margin might be causing issues */
     margin-left: 196px;
     top: 117px;
     position: relative;
     width: 200px;
 }
-
-  
   .section.product .product .card-content {
     display: grid;
     grid-template-columns: repeat(3, minmax(230px, 1fr));
     align-items: center;
     gap: 0.90rem;
-    /* margin-top: 9px; This margin might be causing issues */
     margin-left: -81px;
-    top: 117px;
+    top: 30px;
     position: relative;
     width: 200px;
 }
@@ -775,14 +669,13 @@ a {
     display: block;
  margin-top: -799px;
 }
-      
         .card-content .row{
      background: #f3f3f3;
      position: relative;
      overflow: hidden;
      border-radius: 10px;
      cursor: pointer;
-     } 
+     }
 .row img{
     width: 100%;
     display: block;
@@ -824,8 +717,11 @@ a {
     background: var(--main-color);
     color: white;
 }
-@media (max-width:920px){ .card-content{ grid-template-columns: repeat(3, minmax(230px, 1fr)); margin-left: 20px; } }
-
+/* Products Responsive */
+@media (max-width:920px){
+    .card-content{
+        grid-template-columns: repeat(3, minmax(230px, 1fr)); margin-left: 20px; }
+}
 @media (max-width:920px){
     .section.product .product .card-content{
         grid-template-columns: repeat(2, minmax(230px, 1fr));
@@ -834,9 +730,7 @@ a {
 }
 @media (max-width:1067px){
     .section.product .product .card-content{
- 
 margin-left: -30px;
- 
 }
 }
 @media (max-width:1067px){
@@ -844,13 +738,17 @@ margin-left: -30px;
       margin-left: 76px;
     }
 }
-@media (max-width:760px){
+@media (max-width:920px){
     .banner .card-content{
-      margin-left: -8px;
+        grid-template-columns: repeat(2, minmax(230px, 1fr));
+        margin-left: 115px;
     }
 }
-
-
+@media (max-width:760px){
+    .banner .card-content{
+      margin-left: 73px;
+    }
+}
 @media (max-width:550px){
     .banner .card-content{
         grid-template-columns: repeat(2, minmax(230px, 1fr));
@@ -859,11 +757,17 @@ margin-left: -30px;
 @media (max-width:443px){
     .banner .card-content{
         grid-template-columns: repeat(1, minmax(230px, 1fr));
-        margin-left: 42px;
+        margin-left: 13px;
     }
 }
-@media (max-width:445px){ .section.product .product .card-content{ grid-template-columns: repeat(1, minmax(230px, 1fr)); } }
-@media (max-width:760px){ .filter-btn-list{ position: relative; left: 104px; } } 
+@media (max-width:445px){
+     .section.product .product .card-content{
+        grid-template-columns: repeat(1, minmax(230px, 1fr));margin-left: -20px;}
+     }
+@media (max-width:760px){
+    .filter-btn-list{
+         position: relative; left: 104px; }
+        }
 @media (max-width:500px){
     .h2-section-title{
         left: 141px;
@@ -891,69 +795,49 @@ margin-left: -30px;
         }
         @media (max-width: 766px){
             .h2-section-title{
-           
 margin-left: 189px;
-           
 }
-            }
-            @media (max-width: 500px){
-                .h2-section-title{
-               
-                    margin-left: -12px;
-                }
-                }
-                @media (max-width: 388px){
-                    .h2-section-title{
-                   
+ }
+@media (max-width: 500px){
+.h2-section-title{
+margin-left: -74px;
+}
+ }
+  @media (max-width: 388px){
+    .h2-section-title{
 margin-left: -65px;
-                   
 }
-                }
-                @media (max-width: 292px){
-                    .h2-section-title{
-                   
+}
+@media (max-width: 292px){
+.h2-section-title{
 margin-left: -140px;
-                   
 }
-                    }
-                    @media (max-width: 880px){
-                        .card-content{
-                       
+}
+ @media (max-width: 880px){
+      .card-content{
 left: -3px;
-                       
 position: relative;
 }
-                        }
-
-                        @media (max-width: 500px){
-                            .card-content{
-                           
+ }
+@media (max-width: 500px){
+.card-content{
 left: -71px;
-                           
 position: relative;
     }
-                            }
-                            @media (max-width: 443px){
-                                .card-content{
-                               
+  }
+@media (max-width: 443px){
+.card-content{
 left: 4px;
-                               
 position: relative;
         }
-                                }
-                                @media (max-width: 281px){
-                                    .card-content{
-                                   
+}
+   @media (max-width: 281px){
+  .card-content{
 left: -41px;
-                                   
 position: relative;
             }
-                                    }
-
-/* Product Section End */
-/* 
-modifie avticve products */
-
+}
+/* modifie avticve products */
 .chairs.active .chair2{margin-top: -391px;}
 .chair3 .chairs.active {position: relative;top: -406px;}
 .chair4 .chairs.active{
@@ -1010,19 +894,7 @@ modifie avticve products */
     top: -788px;
     left: 8px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Product Section End */
 
 /* Banner Start */
 .banner{
@@ -1045,6 +917,12 @@ modifie avticve products */
     letter-spacing: 2px;
     font-weight: 500;
     text-shadow: 0px 1px 1px black;
+}
+.banner .card-body h5{
+    color: rgb(184, 106, 106);
+}
+.banner del{
+    text-decoration: line-through;
 }
 .banner-content h3{
     color: #f3f3f3;
@@ -1083,14 +961,11 @@ modifie avticve products */
 @media (max-width: 512px){
     .banner-content{
         font-size: 0px;
-        /* margin-top: -63px; */
         top: -106px;
     }
     }
     @media (max-width: 333px){
         .banner-content{
-            /* font-size: 0px; */
-            /* margin-top: -63px; */
             top: -133px;
         }
         }
@@ -1131,35 +1006,32 @@ modifie avticve products */
     color: rgba(255, 153, 0);
     margin-top: 20px;
 }
+/* review Responsive */
 @media (max-width:1067px) {
     .review-content .img{
         left: -39px;
     }
-    
+
 }
 @media (max-width:996px) {
     .review-content .img{
         left: -47px;
     }
-    
 }
 @media (max-width:890px) {
     .review-content .img{
         left: 176px;
     }
-    
 }
 @media (max-width:600px) {
     .review-content .img{
         left: 65px;
     }
-    
 }
 @media (max-width:400px) {
     .review-content .img{
         left: 3px;
     }
-    
 }
 @media (max-width:920px){
     .review-content{
@@ -1181,11 +1053,13 @@ modifie avticve products */
         left: -8px;
     }
 }
-@media (max-width:468px) {
+@media (max-width:440px) {
     .review-content {
         left: -175px;
         position: relative;
     }
+}
+    @media (max-width:440px) {
     .main-txt h3{
         position: relative;
         left: 3px;
@@ -1201,9 +1075,23 @@ modifie avticve products */
         left: 3px;
     }
 }
+@media (max-width:440px) {
+    .review {
+        margin-top: 1559px;
+    }
+}
+@media (max-width:700px) {
+    .review-content {
+        position: relative;
+    }
 
+}
+@media (max-width:620px) {
+    .review {
+        margin-top: 1081px;
+    }
+}
 /* Review Section End */
-
 
 /* Contact Section Start */
 .contact{
@@ -1336,27 +1224,8 @@ form textarea{
     font-weight: 600;
 }
 /* Footer End */
-html{
-    scroll-behavior: smooth;
-}
-.arrow{
-    position: fixed;
-    background-color: #388b6f;
-    border-radius: 50px;
-    height: 50px;
-    bottom: 40px;
-    right: 50px;
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-}
 
-
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
+/* back tp top button */
 .back-top-btn {
     position: fixed;
     bottom: 30px;
@@ -1371,7 +1240,6 @@ html{
     visibility: hidden;
     transition: var(--transition-1);
   }
-  
   .back-top-btn.active {
     opacity: 1;
     visibility: visible;
@@ -1379,7 +1247,4 @@ html{
     color: var(--main-color);
     font-size: 45px;
   }
-  
-  
-
-
+  /* end */
