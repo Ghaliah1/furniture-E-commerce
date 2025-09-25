@@ -1,8 +1,11 @@
 # Furniture E-Commerce 🛋️
 <img src="./imgs/logo.png">
 <br>
-<img alt="Static Badge" align="center" src="https://img.shields.io/badge/sweet--home-%23877b88" width="300">
+<img  align="center" src="https://img.shields.io/badge/sweet--home-%23877b88" width="300">
 <br>
+A modern **landing page for an e-commerce furniture website**.  
+
+📌 [Live Demo](https://ghaliah1.github.io/furniture-E-commerce/)  
 
 <BR>
 <h2> Use:</h2>
