@@ -1,9 +1,9 @@
-# furniture-E-commerce
+# Furniture E-Commerce 🛋️
 <img src="./imgs/logo.png">
 <br>
-<img alt="Static Badge" src="https://img.shields.io/badge/sweet--home-%23877b88">
+<img alt="Static Badge" align="center" src="https://img.shields.io/badge/sweet--home-%23877b88" width="300">
 <br>
-A landing modern E-commerce website 
+
 <BR>
 <h2> Use:</h2>
 <br>
