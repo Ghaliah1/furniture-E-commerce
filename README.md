@@ -2,20 +2,24 @@
 <img src="./imgs/logo.png">
 
 <br>
-A modern **landing page for an e-commerce furniture website** .
+A modern <h2> landing page for an e-commerce furniture website .</h2>
 
 📌 [Live Demo](https://ghaliah1.github.io/furniture-E-commerce/)  
 
 <BR>
-<h2> Use:</h2>
+<h2> Features:</h2>
 <br>
-- Scroll down to discover each section 
-<br>
-- You can discover each section from the navigation bar too 
-<br>
-- Each section contains services , products , contact , and reviews 
-<br>
-- You can go back to the home section by clicking on the arrow button on the bottom right
-<br>
+- Smooth scrolling between sections  <br>
+- Navigation bar for quick access  <br>
+- Sections: services, products, contact, and reviews  <br>
+- "Back to top" arrow for easy navigation  <br>
+
 <h2> More information:</h2>
-In this project to make smooth and easy to use  and fun to discover E-commerce landing page <br> Note : the add to bag , add to fav , and search buttons unfortinatly not able to be used for now , hoping it will find the light someday!
+This project focuses on creating a smooth and modern browsing experience for an e-commerce landing page.  
+
+⚠️ Note: The **Add to Bag**, **Add to Favorites**, and **Search** buttons are placeholders (not functional yet).  <br>
+
+<h2> echnologies Used</h2>
+- HTML  <br>
+- CSS / SCSS / Less  <br>
+- JavaScript  <br>
