@@ -15,9 +15,9 @@ A modern <h2> landing page for an e-commerce furniture website .</h2>
 - "Back to top" arrow for easy navigation  <br>
 <h2> Screenshots :</h2>
 Homepage <br>
-<img src="./imgs/Screenshot1"><br>
+<img src="./imgs/Screenshot1.png"><br>
 Products Section <br>
-<img src="./imgs/Screenshot2"><br>
+<img src="./imgs/Screenshot2.png"><br>
 <h2> More information:</h2>
 This project focuses on creating a smooth and modern browsing experience for an e-commerce landing page.  
 
