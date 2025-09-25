@@ -2,7 +2,7 @@
 <img src="./imgs/logo.png">
 
 <br>
-A modern <h2> landing page for an e-commerce furniture website .</h2>
+<h2> A modern landing page for an e-commerce furniture website .</h2>
 
 📌 [Live Demo](https://ghaliah1.github.io/furniture-E-commerce/)  
 
@@ -25,5 +25,5 @@ This project focuses on creating a smooth and modern browsing experience for an 
 
 <h2> echnologies Used</h2>
 - HTML  <br>
-- CSS / SCSS / Less  <br>
+- CSS / SCSS   <br>
 - JavaScript  <br>
