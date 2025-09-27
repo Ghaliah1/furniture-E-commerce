@@ -1,5 +1,5 @@
 # Furniture E-Commerce 🛋️
-<img src="./imgs/logo.png">
+
 
 <br>
 <h2> A modern landing page for an e-commerce furniture website .</h2>
